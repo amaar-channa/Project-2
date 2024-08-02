@@ -38,6 +38,18 @@ class MainActivityTest {
     }
 
     @Test
+    fun validateEmptyEditText() {
+        onView(withId(R.id.changeTextBtn)).perform(click())
+        onView(withId(R.id.changeTextView)).check(matches(withText("")))
+    }
+
+    @Test
+    fun validateEmptyEditTextInDisplayTextActivity() {
+        onView(withId(R.id.openActivityBtn)).perform(click())
+        onView(withId(R.id.nameTextView)).check(matches(withText("")))
+    }
+
+    @Test
     fun validateEditTextWithAlphabets() {
         onView(withId(R.id.changeEditText)).perform(typeText("abcdef"))
         onView(withId(R.id.changeTextBtn)).perform(click())

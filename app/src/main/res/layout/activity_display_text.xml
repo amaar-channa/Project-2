@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/nameTextView"
-        android:layout_width="212dp"
-        android:layout_height="44dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
