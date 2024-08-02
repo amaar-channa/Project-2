@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.changeTextBtn.setOnClickListener {
             binding.changeTextView.text = binding.changeEditText.text.toString()
+
         }
 
         binding.openActivityBtn.setOnClickListener {
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DisplayTextActivity::class.java).apply {
                 putExtra("EXTRA_MESSAGE", message)
             }
+
             startActivity(intent)
         }
     }
