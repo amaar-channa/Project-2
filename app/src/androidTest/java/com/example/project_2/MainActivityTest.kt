@@ -49,6 +49,7 @@ class MainActivityTest {
         onView(withId(R.id.nameTextView)).check(matches(withText("")))
     }
 
+
     @Test
     fun validateEditTextWithAlphabets() {
         onView(withId(R.id.changeEditText)).perform(typeText("abcdef"))
